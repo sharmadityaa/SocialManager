@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#2C3333</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#242B2E</color>
+
+    <color name="Primary">#2C3333</color>
+    <color name="Secondary">#395B64</color>
+    <color name="Tertiary">#A5C9CA</color>
+
+    <!-- For NO REFRESH GLITCH-->
+    <color name="Tertiary2">#A5C9CB</color>
+    <color name="Tertiary3">#A5C9C9</color>
+    <color name="Tertiary4">#A5CACA</color>
+    <color name="Tertiary5">#A5C8CA</color>
+    <color name="Tertiary6">#A6C9CA</color>
+
+    <color name="Tertiary7">#A4C9CA</color>
+    <color name="Tertiary8">#A7C9CA</color>
+    <color name="Tertiary9">#A3C9CA</color>
+    <color name="Tertiary10">#A5C7CA</color>
+    <color name="Tertiary11">#A5CBCA</color>
+    <color name="Tertiary12">#A5C9C8</color>
+    <color name="Tertiary13">#A5C9CC</color>
+    <color name="Tertiary14">#A5C9CD</color>
+
+
+</resources>
