@@ -11,6 +11,9 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -48,7 +51,6 @@ public class PostsInfoActivity extends AppCompatActivity {
         button_upload = findViewById(R.id.button_upload);
 
         bitmapImage = null;
-
 
         button_upload.setOnClickListener(new View.OnClickListener() {
             @Override

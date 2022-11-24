@@ -149,21 +149,6 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     @Override
     public boolean onMenuItemClick(MenuItem item) {
         switch (item.getItemId()){
-            case R.id.pin:
-                if(selectedPost.isPinned()){
-                    database.mainDAO().pin(selectedPost.getID(), false);
-                    Toast.makeText(MainActivity.this, "Unpinned", Toast.LENGTH_SHORT).show();
-
-                }
-                else{
-                    database.mainDAO().pin(selectedPost.getID(), true);
-                    Toast.makeText(MainActivity.this, "Pinned", Toast.LENGTH_SHORT).show();
-                }
-
-                posts.clear();
-                posts.addAll(database.mainDAO().getAll());
-                postsListAdapter.notifyDataSetChanged();
-                return true;
 
             case R.id.delete:
                 database.mainDAO().delete(selectedPost);

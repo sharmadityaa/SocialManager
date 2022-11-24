@@ -30,7 +30,7 @@ public class PostsListAdapter extends RecyclerView.Adapter<PostsViewHolder>{
     // another interface post click listener with 2 methods, onClick and onLongClick
     PostsClickListener listener;
 
-    // made construct using generate
+    // made constructor using generate
     public PostsListAdapter(Context context, List<Posts> list, PostsClickListener listener) {
         this.context = context;
         this.list = list;
@@ -58,27 +58,26 @@ public class PostsListAdapter extends RecyclerView.Adapter<PostsViewHolder>{
         holder.textView_date.setText(list.get(position).getDate());
         holder.textView_date.setSelected(true);
 
-        //for the image upload
-
-
         //For Pin ka items
         //boolean hai, toh we will see if its true or no
         //if true then show ic_pin, if not then don't show ic_pin
         //what does ic mean in res folders mean btw? you reckon we should to_do this too?
 
-        if (list.get(position).isPinned()/* matlab if isPinned is true*/){
+        /*
+         if (list.get(position).isPinned()){
             //toh from image view pin, set the img resource to ic_pin which is in Resources (R)
             // wala folder ke andar drawable ka folder.
             holder.imageView_pin.setImageResource(R.drawable.ic_push_pin);
         }
         else {
             holder.imageView_pin.setImageResource(0);
+        } */
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+
+                holder.posts_container.setCardBackgroundColor(0xffA5C9CA);
         }
 
-        int color_code = getRandomColor();
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            holder.posts_container.setCardBackgroundColor(holder.itemView.getResources().getColor(color_code, null));
-        }
 
         holder.posts_container.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -98,6 +97,7 @@ public class PostsListAdapter extends RecyclerView.Adapter<PostsViewHolder>{
 
     }
 
+    /*
     private int getRandomColor(){
         List<Integer> colorCode = new ArrayList<>();
 
@@ -121,6 +121,7 @@ public class PostsListAdapter extends RecyclerView.Adapter<PostsViewHolder>{
         return colorCode.get(random_color);
     }
 
+     */
     @Override
     public int getItemCount() {
         return list.size();

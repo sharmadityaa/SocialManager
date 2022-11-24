@@ -31,6 +31,8 @@ public class Posts implements Serializable {
     @ColumnInfo(name = "images",typeAffinity = ColumnInfo.BLOB)
     byte[] images;
 
+
+
     public byte[] getImages() {
         return images;
     }
