@@ -35,5 +35,5 @@ The project has following files
         ii. activity_posts_info
         ii. posts_list
  2. Menu
-        i. menu_popup.xml
+        i.  menu_popup.xml
 </pre>
